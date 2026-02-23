@@ -1,0 +1,20 @@
+{
+  "name": "@plexus/client",
+  "version": "0.0.0-e646cea603d37035",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "npx tsx test/smoke.test.ts",
+    "test:bidir": "npx tsx test/bidir-smoke.test.ts",
+    "test:all": "npm run test && npm run test:bidir",
+    "typecheck": "npx tsc --noEmit"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "@types/ws": "^8.0.0"
+  }
+}
